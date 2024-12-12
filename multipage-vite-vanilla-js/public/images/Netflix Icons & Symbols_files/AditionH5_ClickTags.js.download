@@ -1,0 +1,3 @@
+function getParameterByName(c,a){var b;'undefined'===typeof a&&(a=window.location.search);return(b=RegExp('[?&]'+c+'=([^&]*)').exec(a))&&decodeURIComponent(b[1].replace(/\+/g,' '))}
+for(var getParametersToInject='clicktag clicktag1 clicktag2 clicktag3 clicktag4 clicktag5 clicktag6 clicktag7 clicktag8 clicktag9 gdpr gdpr_consent'.split(' '),h5bl=['location'],i=0;i<getParametersToInject.length;i++){var tmpClicktag=getParameterByName(getParametersToInject[i]);null!==tmpClicktag&&(window[getParametersToInject[i]]=tmpClicktag)}var h5ParamsJson=getParameterByName('h5Params');
+if(h5ParamsJson){var h5Params=JSON.parse(h5ParamsJson),h5key;for(h5key in h5Params)h5Params.hasOwnProperty(h5key)&&!(-1<h5bl.indexOf(h5key))&&(window[h5key]=h5Params[h5key])};

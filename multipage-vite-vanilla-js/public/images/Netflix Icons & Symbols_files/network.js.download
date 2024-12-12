@@ -1,0 +1,3 @@
+//ns
+window.Adition_DSA = window.Adition_DSA || {}
+window.Adition_DSA[parseInt('270')] = 1;
