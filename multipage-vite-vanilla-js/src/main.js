@@ -8,46 +8,46 @@ div.innerHTML = `
 <header>
       <div class="back">
         <div>
-          <img src="../images/Logo.png" alt=""> <img src="../images/SaintStream.png" alt="">
+            <img src="../images/Logo.png" alt=""> <img src="../images/SaintStream.png" alt=""> 
+
         </div>
         <div>
           <nav>
           <ul>
-            <li><a href="">Home</a></li>   
-            <li><a href="">Discover</a></li>
-            <li><a href="">MovieRelease</a></li>
-            <li><a href="">Forum</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="./multipage-vite-vanilla-js/index.html">Home</a></li>
+            <li><a href="/detail.html">Discover</a></li>
+            <li><a href="/detail.html">MovieRelease</a></li>
+            <li><a href="/detail.html">Forum</a></li>
+            <li><a href="/detail.html">About</a></li>
           </ul>
             
           </nav>
         </div>
         <div class="sone">
-          <img class="search" src="./public//images//search icon.png" alt="">
-         <img class="notifications" src="../images/notifications.png" alt="">
-         <img class="avater" src="../images/avater.png" alt="">
-         <img class="drop" src="../images/drop down.png" alt="">
+         <img class="search" src="/images/search-imgool.png" alt="">
+         <img class="notifications" src="/images/download (1)imggg.png" alt="">
+         <img class="avater" src="/images/avater.png" alt="">
+         <img class="drop" src="/images/drop down.png" alt="">
         </div>
       </div>
 
       <section id="hero">
-        <img class="the" src="../images/download.png" alt="">
         <button class="one">season 3</button>
         <h1 class="two">The Mandalorain</h1>
         <h5 class="twoo">2h40m . 2022 . fantasty . Actions</h5>
-        <p class="twooo">The third season of the American television series The Mandalorain stars pedro<br>pascal as the title character, a bountry hunter  traveling to Mandalorain to redeem <br> his past tansgressions with his adopted son Grogu  being aided on their journey <br> by fellow Mandalorain  Bo-Katan kryze.</p>
+        <p class="twooo">The third season of the American television <br> series The Mandalorain stars pedro pascal as the <br> title character, a bountry hunter  traveling to <br> Mandalorain to redeem  his past tansgressions  <br>with his adopted son Grogu  being aided on their <br> journey  by fellow Mandalorain  Bo-Katan kryze.</p>
         <div class="two">
         <button id="btn1"><img width="25" height="25" src="https://img.icons8.com/ios-filled/50/1A1A1A/circled-play.png" alt="circled-play"/>Play Now</button>
         <button id="btn2"><img width="25" height="25" src="https://img.icons8.com/ios-filled/50/1A1A1A/circled-play.png" alt="circled-play"/>Watch Trailer</button>
         <button id="btn3"><img width="25" height="25" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/bookmark-ribbon.png" alt="bookmark-ribbon"/>Add wacthlist</button>
         <div class="bako">
-          <img src="./public/images/WhatsApp Imag dis.jpg" alt="" class="b-img">
-          <img src="./public/images/WhatsApp Image netfl.jpg" alt="" class="b-img">
-          <img src="./public/images/WhatsApp Image hbm.jpg" alt="" class="b-img">
-          <img src="./public/images/WhatsApp Image pix.jpg" alt="" class="b-img">
-          <img src="./public/images/WhatsApp Image mav.jpg" alt="" class="b-img">
-          <img src="./public/images/WhatsApp Image star.jpg" alt="" class="b-img">
-          <img src="./public/images/WhatsApp Image nat.jpg" alt="" class="b-img">
+          <img src="/images/WhatsApp Imag dis.jpg" alt="" class="b-img">
+          <img src="/images/WhatsApp Image netfl.jpg" alt="" class="b-img">
+          <img src="/images/WhatsApp Image hbm.jpg" alt="" class="b-img">
+          <img src="/images/WhatsApp Image pix.jpg" alt="" class="b-img">
+          <img src="/images/WhatsApp Image mav.jpg" alt="" class="b-img">
+          <img src="/images/WhatsApp Image star.jpg" alt="" class="b-img">
+          <img src="/images/WhatsApp Image nat.jpg" alt="" class="b-img">
         </div>
         </div>
         
@@ -60,6 +60,36 @@ div.innerHTML = `
       <div id="aaa">
       </div>
       <div id="image-container"></div> 
+
+
+
+      <div class="thre">
+      <div class="ther">
+        <p>Explore by the genre</p>
+        <h2>
+          Guardian Of The <br> Galaxy; Volume 3
+        </h2>
+        <h5>2H40M.2022.Superhero . Actions</h5>
+      </div>
+      <div class="tomp">
+      <button id="button"><img width="25" height="25" src="https://img.icons8.com/ios-filled/50/1A1A1A/circled-play.png" alt="circled-play"/>Play Now</button>
+      <button id="button3"><img width="25" height="25" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/bookmark-ribbon.png" alt="bookmark-ribbon"/>Add wacthlist</button>
+      </div>
+
+      <div class="opop">
+       <div class="opp"> < </div>
+       <div class="upp"> > </div>
+     </div>
+      <div class="zump">
+      <div class="muk">
+      <img src="/images/imagehero.png" alt="">
+   </div>
+     <div class="mok"><img src="/images/imagedram.png" alt=""></div>
+     <div class="mke"><img src="/images/imagesit.png" alt=""></div>
+     <div class="muuk"><img src="/images/imahetra.png" alt=""></div>
+     <div class="moke"><img src="/images/imagecome.png" alt=""></div>
+    <div class="muok"><img src="/images/imagefan.png" alt=""></div>
+    </div>
 
       <footer>
     <div class="jude">
@@ -116,6 +146,7 @@ fetch(
       <div class="img-container">
             <h2>${results[index].original_title} </h2>
       <img src="https://image.tmdb.org/t/p/w500${results[index].poster_path}" alt="${results[index].original_title}" />
+      <p><span id="star">&#11088;</span>${results[index].vote_count}   <span id="thumbs">&#128077</span></p>
       </div>
 
       `;

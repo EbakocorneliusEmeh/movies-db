@@ -20,21 +20,21 @@ body {
   width: 100%;
   display: grid;
   justify-content: flex-start;
-  background-image: url("../../public/images/backg.jpg");
+  background-image: url("../../public/images/toopiiknnfnn.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: left;
   gap: 2rem;
 }
 .one {
-  width: 100px;
-  height: 30px;
-  background-color: black;
+  margin-top: 6rem;
+  width: 120px;
+  height: 60px;
+  background-color: rgb(25, 24, 24);
   color: white;
-  border-radius: 50px;
-  font: 1.2em sans-serif;
-  display: flex;
-  text-align: left;
+  border-radius: 60px;
+  font: 1rem sans-serif;
+  border: none;
 }
 
 .botton img {
@@ -48,6 +48,8 @@ body {
   font-size: 25px;
   width: 230px;
   height: 80px;
+  gap: 3rem;
+  border: none;
 }
 #btn2 {
   background-color: rgb(79, 79, 79);
@@ -56,14 +58,19 @@ body {
   font-size: 18px;
   width: 230px;
   height: 80px;
+  gap: 3rem;
+  border: none;
 }
 #btn3 {
+  gap: 3rem;
+  margin-top: 4rem;
   background-color: black;
   color: #fff;
   border-radius: 10px;
   font-size: 20px;
   width: 230px;
   height: 80px;
+  border: none;
 }
 
 .the {
@@ -111,6 +118,8 @@ ul li a {
 }
 
 .bako {
+  margin-top: 7rem;
+  margin-bottom: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,7 +161,7 @@ ul li a {
   display: flex;
   gap: 2rem;
   align-items: end;
-  background-color: grey;
+  /* background-color: grey; */
   color: white;
 }
 
@@ -161,6 +170,11 @@ ul li a {
   display: grid;
   grid-template-columns: repeat(4, 5fr);
   padding: 5px;
+  margin-top: 4rem;
+}
+#aaa p{
+  color: #fff;
+  font-size: 2rem;
 }
 
 .img-container {
@@ -198,6 +212,7 @@ h1 {
 }
 footer {
   background-color: aqua;
+  margin-top: 4rem;
 }
 .jude {
   display: flex;
@@ -205,7 +220,6 @@ footer {
   background-color: black;
 }
 .penn {
-  color: ;
   gap: 3rem;
   font-size: 2rem;
 }
@@ -225,15 +239,126 @@ footer {
   gap: 3rem;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.thre {
+  background-image: url(../../public/images/image\ image.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 95vw;
+}
+.ther {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 5rem;
+}
+.ther p {
+  padding-top: 15px;
+  margin-top: 5rem;
+  width: 170px;
+  height: 50px;
+  color: #fff;
+  font-size: large;
+  display: flex;justify-content: center;
+  border-radius: 60px;
+  background-color: black;
+}
+.ther h2{
+  font-size: 5rem;
+  color: black;
+}
+.ther h5{
+  font-size: 2rem;
+  color: black;
+}
+#button {
+  background-color: green;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 25px;
+  width: 230px;
+  height: 80px;
+  gap: 3rem;
+  border: none;
+}
+#button3{
+  gap: 3rem;
+  /* margin-top: 4rem; */
+  background-color: black;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 230px;
+  height: 80px;
+  border: none;
+}
+.tomp{
+  margin-top: 3rem;
+  display: flex;
+  gap: 3%;
+}
+.muk img {
+  width: 80%;
+  height: 100%;
+  /* display: flex; */
+
+}
+.mok img {
+  width: 80%;
+  height: 100%;
+}
+.mke img {
+  width: 80%;
+  height: 100%;
+}
+.muuk img {
+  width: 80%;
+  height: 100%;
+}
+.moke img {
+  width: 80%;
+  height: 100%;
+}
+.muok img {
+  width: 80%;
+  height: 100%;
+} 
+.zump {
+  display: flex;
+  margin-top: 4rem;
+}
+
+.opp {
+  color: white;
+  font-size: 4rem;
+  display: flex;
+  border-radius: 50px;
+  background-color: rgb(62, 59, 59);
+  width: 80px;
+  padding-top: 5px;
+  align-items: baseline;
+  justify-content: center;
+  align-items: center;
+}
+.upp {
+  color: white;
+  font-size: 4rem;
+  display: flex;
+  border-radius: 50px;
+  background-color: rgb(62, 59, 59);
+  width: 80px;
+  padding-top: 5px;
+  align-items: baseline;
+  justify-content: center;
+  align-items: center;
+}
+.opop {
+  margin-top: 4rem;
+  gap: 3rem;
+  display: flex;
+
+}
+@media (min-width: 720px) {
+  
 }
