@@ -357,8 +357,20 @@ footer {
   margin-top: 4rem;
   gap: 3rem;
   display: flex;
+}
 
-}
-@media (min-width: 720px) {
+  @media (max-width: 600px) {
+    .sone {
+      display: none;
+      padding: 15px;
+    }
+    nav{
+      
+    }
+  }
+  footer{
+    display: flex;
+    margin-bottom: none;
+  }
   
-}
+
