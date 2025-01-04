@@ -1,0 +1,33 @@
+nav {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+}
+
+.sone {
+  display: flex;
+  gap: 2rem;
+  justify-content: end;
+}
+
+.one {
+  background-color: black;
+  border-radius: 80px;
+  color: white;
+  font: 1em sans-serif;
+  width: 10%;
+}
+
+.two image {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13rem;
+  width: 100%;
+}
+
+.two {
+  text-align: initial;
+}
+.read-the-docs {
+  background-color: blue;
+}
