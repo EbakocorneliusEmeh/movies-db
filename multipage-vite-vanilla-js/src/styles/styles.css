@@ -7,9 +7,6 @@ body {
   background-color: black;
 }
 
-body {
-  width: 100%;
-}
 #app {
   width: 100%;
   margin: auto;
@@ -179,7 +176,7 @@ ul li a {
   padding: 5px;
   margin-top: 4rem;
 }
-#aaa p{
+#aaa p {
   color: #fff;
   font-size: 2rem;
 }
@@ -201,24 +198,24 @@ ul li a {
   margin: 10px;
   display: flex;
 }
-footer{
-  background-color:black;
+footer {
+  background-color: black;
   display: flex;
   justify-content: space-between;
 }
-#page{
+#page {
   background-color: rgba(18, 33, 39, 0.938);
 }
 
-.logos{
+.logos {
   display: flex;
   gap: 3rem;
 }
-.amba{
+.amba {
   background-color: white;
   margin-bottom: 3rem;
 }
-.pppe{
+.pppe {
   color: white;
   display: flex;
   gap: 3rem;
@@ -226,16 +223,16 @@ footer{
   margin-top: 2rem;
   margin-right: 3rem;
 }
-.parata{
+.parata {
   margin-left: 5rem;
   margin-top: 2rem;
 
-  h1{
+  h1 {
     margin-bottom: 6rem;
     color: white;
   }
 }
-.ben{
+.ben {
   margin-bottom: 2rem;
   color: white;
   display: flex;
@@ -264,16 +261,17 @@ footer{
   height: 50px;
   color: #fff;
   font-size: 19px;
-  display: flex;justify-content: center;
+  display: flex;
+  justify-content: center;
   border-radius: 60px;
   background-color: black;
   margin-left: 1rem;
 }
-.ther h2{
+.ther h2 {
   font-size: 5rem;
   color: black;
 }
-.ther h5{
+.ther h5 {
   font-size: 2rem;
   color: black;
 }
@@ -287,7 +285,7 @@ footer{
   gap: 3rem;
   border: none;
 }
-#button3{
+#button3 {
   gap: 3rem;
   /* margin-top: 4rem; */
   background-color: black;
@@ -298,7 +296,7 @@ footer{
   height: 80px;
   border: none;
 }
-.tomp{
+.tomp {
   margin-top: 3rem;
   display: flex;
   gap: 3%;
@@ -307,8 +305,6 @@ footer{
 .muk img {
   width: 80%;
   height: 100%;
-  /* display: flex; */
-
 }
 .mok img {
   width: 80%;
@@ -329,7 +325,7 @@ footer{
 .muok img {
   width: 80%;
   height: 100%;
-} 
+}
 .zump {
   display: flex;
   margin-top: 4rem;
