@@ -13,6 +13,7 @@ body {
   padding: 2rem;
   text-align: center;
 }
+
 #hero {
   width: 100%;
   display: grid;
@@ -23,11 +24,12 @@ body {
   text-align: left;
   gap: 2rem;
 }
+
 .one {
   margin-top: 6rem;
   width: 120px;
   height: 60px;
-  background-color: rgb(25, 24, 24);
+  background-color: #191818;
   color: white;
   border-radius: 60px;
   font: 1rem sans-serif;
@@ -39,6 +41,7 @@ body {
   width: 5px;
   height: 5px;
 }
+
 #btn1 {
   background-color: green;
   color: #fff;
@@ -50,8 +53,9 @@ body {
   border: none;
   margin-left: 2rem;
 }
+
 #btn2 {
-  background-color: rgb(79, 79, 79);
+  background-color: #4f4f4f;
   color: #fff;
   border-radius: 10px;
   font-size: 18px;
@@ -61,10 +65,11 @@ body {
   border: none;
   margin-left: 2rem;
 }
+
 #btn3 {
   gap: 3rem;
   margin-top: 4rem;
-  background-color: black;
+  background-color: #000000;
   color: #fff;
   border-radius: 10px;
   font-size: 20px;
@@ -81,25 +86,30 @@ body {
   margin-top: 25rem;
   background-repeat: no-repeat;
 }
+
 .two {
   color: white;
   font-size: 3rem;
 }
+
 .twoo {
   font-size: 20px;
   color: whitesmoke;
   margin-left: 2rem;
 }
+
 .twooo {
   color: white;
   font-size: 20px;
   margin-left: 2rem;
 }
+
 .back {
   display: flex;
   justify-content: space-around;
-  background-color: rgba(18, 33, 39, 0.938);
+  background-color: #122127ef;
 }
+
 nav {
   display: flex;
   gap: 4rem;
@@ -129,6 +139,7 @@ ul li a {
   align-items: center;
   justify-content: center;
 }
+
 .bako img {
   width: 11vw;
   gap: 20px;
@@ -143,25 +154,30 @@ ul li a {
   background-color: black;
   border-radius: 10px;
 }
+
 .search {
   width: 32px;
   height: 32px;
 }
+
 .notifications {
   width: 32px;
   height: 32px;
   gap: 2rem;
 }
+
 .avater {
   width: 32px;
   height: 32px;
   gap: 2rem;
 }
+
 .drop {
   width: 32px;
   height: 32px;
   gap: 2rem;
 }
+
 .sone {
   display: flex;
   gap: 2rem;
@@ -170,12 +186,13 @@ ul li a {
 }
 
 #aaa {
-  background-color: black;
+  background-color: #000000;
   display: grid;
   grid-template-columns: repeat(4, 5fr);
   padding: 5px;
   margin-top: 4rem;
 }
+
 #aaa p {
   color: #fff;
   font-size: 2rem;
@@ -188,6 +205,7 @@ ul li a {
   flex-direction: column;
   background-color: black;
 }
+
 .img-container h2 {
   color: #fff;
 }
@@ -198,11 +216,13 @@ ul li a {
   margin: 10px;
   display: flex;
 }
+
 footer {
   background-color: black;
   display: flex;
   justify-content: space-between;
 }
+
 #page {
   background-color: rgba(18, 33, 39, 0.938);
 }
@@ -211,10 +231,12 @@ footer {
   display: flex;
   gap: 3rem;
 }
+
 .amba {
   background-color: white;
   margin-bottom: 3rem;
 }
+
 .pppe {
   color: white;
   display: flex;
@@ -223,6 +245,7 @@ footer {
   margin-top: 2rem;
   margin-right: 3rem;
 }
+
 .parata {
   margin-left: 5rem;
   margin-top: 2rem;
@@ -232,6 +255,7 @@ footer {
     color: white;
   }
 }
+
 .ben {
   margin-bottom: 2rem;
   color: white;
@@ -246,6 +270,7 @@ footer {
   height: 100vh;
   width: 95vw;
 }
+
 .ther {
   display: flex;
   flex-direction: column;
@@ -254,6 +279,7 @@ footer {
   margin-top: 5rem;
   margin-left: 3rem;
 }
+
 .ther p {
   padding-top: 15px;
   margin-top: 5rem;
@@ -267,10 +293,12 @@ footer {
   background-color: black;
   margin-left: 1rem;
 }
+
 .ther h2 {
   font-size: 5rem;
   color: black;
 }
+
 .ther h5 {
   font-size: 2rem;
   color: black;
@@ -285,9 +313,9 @@ footer {
   gap: 3rem;
   border: none;
 }
+
 #button3 {
   gap: 3rem;
-  /* margin-top: 4rem; */
   background-color: black;
   color: #fff;
   border-radius: 10px;
@@ -296,36 +324,44 @@ footer {
   height: 80px;
   border: none;
 }
+
 .tomp {
   margin-top: 3rem;
   display: flex;
   gap: 3%;
   margin-left: 2rem;
 }
+
 .muk img {
   width: 80%;
   height: 100%;
 }
+
 .mok img {
   width: 80%;
   height: 100%;
 }
+
 .mke img {
   width: 80%;
   height: 100%;
 }
+
 .muuk img {
   width: 80%;
   height: 100%;
 }
+
 .moke img {
   width: 80%;
   height: 100%;
 }
+
 .muok img {
   width: 80%;
   height: 100%;
 }
+
 .zump {
   display: flex;
   margin-top: 4rem;
@@ -344,6 +380,7 @@ footer {
   align-items: center;
   margin-left: 2rem;
 }
+
 .upp {
   color: white;
   font-size: 4rem;
@@ -356,6 +393,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
 .opop {
   margin-top: 4rem;
   gap: 3rem;
