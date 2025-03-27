@@ -1,0 +1,149 @@
+// Functions
+var Cookie =
+{
+   set: function(name, value, days)
+   {
+      var domain, domainParts, date, expires, host;
+
+      if (days)
+      {
+         date = new Date();
+         date.setTime(date.getTime()+(days*24*60*60*1000));
+         expires = "; expires="+date.toGMTString();
+      }
+      else
+      {
+         expires = "";
+      }
+
+      host = location.host;
+      if (host.split('.').length === 1)
+      {
+         document.cookie = name+"="+value+expires+"; path=/";
+         document.cookie = name+"b="+value+expires+"; path=/; secure; SameSite=None";
+      }
+      else
+      {
+         domainParts = host.split('.');
+         domainParts.shift();
+         domain = '.'+domainParts.join('.');
+
+         document.cookie = name+"="+value+expires+"; path=/; domain="+domain;
+         document.cookie = name+"b="+value+expires+"; path=/; SameSite=None; secure; domain="+domain;
+
+         if (Cookie.get(name) == null || Cookie.get(name) != value)
+         {
+            domain = '.'+host;
+            document.cookie = name+"="+value+expires+"; path=/; domain="+domain;
+            document.cookie = name+"b="+value+expires+"; path=/; SameSite=None; secure; domain="+domain;
+         }
+      }
+   },
+   
+   get: function(name)
+   {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for (var i=0; i < ca.length; i++)
+      {
+         var c = ca[i];
+         while (c.charAt(0)==' ')
+         {
+            c = c.substring(1,c.length);
+         }
+
+         if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+      }
+      return null;
+   },
+
+   erase: function(name)
+   {
+      Cookie.set(name, '', -1);
+   }
+};
+
+var qs = (function(a) {
+    if (a == "") return {};
+    var b = {};
+    for (var i = 0; i < a.length; ++i)
+    {
+        var p=a[i].split('=', 2);
+        if (p.length == 1)
+            b[p[0]] = "";
+        else
+            b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+    }
+    return b;
+})(window.location.search.substr(1).split('&'));
+// Functions
+
+//console.log(Cookie.get("raSID"));
+
+if (typeof qs["ra_id"] !== 'undefined') {
+    var t = qs["ra_id"];
+    var tsPeriod = 60;
+    var tsProgramData = {
+                    sid: qs["ra_id"]
+                    };
+    Cookie.set('raSID', tsProgramData.sid, tsPeriod);
+    window.localStorage.setItem('tsProgramData', JSON.stringify(tsProgramData));
+}
+
+if (typeof tsProgramID !== 'undefined' && tsProgramID != '') {
+
+    if(typeof tsCid === 'undefined' || tsCid == '') {
+        var tsCid = '';
+    }
+
+    if(typeof tsValue === 'undefined' || tsValue == '') {
+        var tsValue = '';
+    }
+    
+    if(typeof tsVoucherCode === 'undefined' || tsVoucherCode == '') {
+        var tsVoucherCode = '';
+    }
+    
+    if (typeof tsVoucher !== 'undefined' && tsVoucher != '' && tsVoucherCode == '') {
+        tsVoucherCode = tsVoucher;
+    }
+
+    if(typeof tsOrigRaid === 'undefined' || tsOrigRaid == '') {
+        var tsOrigRaid = '';
+    }
+
+    if(Cookie.get("raSID") !== null) {
+        var data = 'tt=1ps&tts=1&p=' + tsProgramID + '&oid=' + tsOrderID + '&cid=' + tsCid + '&ocategory=' + tsCategory + '&ovalue=' + tsValue + '&ovc=' + tsVoucherCode + '&ra_id=' + Cookie.get("raSID") + '&ra_id_s=' + tsOrigRaid;
+    }
+    else if(Cookie.get("raSIDb") !== null) {
+        var data = 'tt=1ps&tts=2&p=' + tsProgramID + '&oid=' + tsOrderID + '&cid=' + tsCid + '&ocategory=' + tsCategory + '&ovalue=' + tsValue + '&ovc=' + tsVoucherCode + '&ra_id=' + Cookie.get("raSIDb") + '&ra_id_s=' + tsOrigRaid;
+    }
+    else if(Cookie.get("raID") !== null) {
+        var data = 'tt=r1p&tts=1&p=' + tsProgramID + '&oid=' + tsOrderID + '&cid=' + tsCid + '&ocategory=' + tsCategory + '&ovalue=' + tsValue + '&ovc=' + tsVoucherCode + '&ra_id=' + Cookie.get("raID") + '&ra_id_s=' + tsOrigRaid;
+    }
+    else if(Cookie.get("raIDb") !== null) {
+        var data = 'tt=r1p&tts=2&p=' + tsProgramID + '&oid=' + tsOrderID + '&cid=' + tsCid + '&ocategory=' + tsCategory + '&ovalue=' + tsValue + '&ovc=' + tsVoucherCode + '&ra_id=' + Cookie.get("raIDb") + '&ra_id_s=' + tsOrigRaid;
+    }
+    else if(localStorage.getItem('tsProgramData') !== null) {
+        var tsProgramData = JSON.parse(localStorage.getItem('tsProgramData'));
+        var data = 'tt=1ps&tts=3&p=' + tsProgramID + '&oid=' + tsOrderID + '&cid=' + tsCid + '&ocategory=' + tsCategory + '&ovalue=' + tsValue + '&ovc=' + tsVoucherCode + '&ra_id=' + tsProgramData.sid + '&ra_id_s=' + tsOrigRaid;
+    }
+    else {
+        var data = 'tt=1ps&p=' + tsProgramID + '&oid=' + tsOrderID + '&cid=' + tsCid + '&ocategory=' + tsCategory + '&ovalue=' + tsValue + '&ovc=' + tsVoucherCode + '&ra_id=&ra_id_s=' + tsOrigRaid;
+    }
+
+    if (typeof tsBasketItems !== 'undefined' && tsBasketItems != '') {
+        data = data + "&obasket=" + encodeURIComponent(JSON.stringify(tsBasketItems));
+    }
+
+    //console.log('https://cdn.retailads.net/tl.php?'+data);
+
+
+    var pixel = document.createElement("img");
+    pixel.width = 1;
+    pixel.height = 1;
+    pixel.style.display = 'none';
+    pixel.src = 'https://cdn.retailads.net/tl.php?s=js&'+data;
+
+    document.body.appendChild(pixel);
+}

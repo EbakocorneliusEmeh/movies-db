@@ -1,0 +1,9 @@
+Adform=window.Adform||{};
+Adform.host="https://track.adform.net";
+Adform.shost="https://s1.adform.net";
+Adform.scriptBase=Adform.shost+"/banners/scripts/";
+Adform.cache="634";
+Adform.ADFBannerData={"URL":"https://track.adform.net/adfserve/?bn=60696828;rtbwp=Z1mSHQAAAAD10YHQImWDjcSlPb5mv8SY3seUeA;rtbdata=uQ15ENla1PBUXt07Xu8SbkexDYx219UxChPey7YWEEN3FiYY8-WdSY-mRquyWlHl8IHEet_TwFupD9xhmZWv7YBZHq9gMnz228xDpu5URUDqAJH6-HtngsSNJ0joFmTtW1dfeGF5ROuzNL2GLAJPU_SpAPoVZRIE90u6hrRYeB_NnWwHdM-smm8MkhzzZERhG58XCfWmmJcuV6h-zFgJrqX6ATE1bUa2aiGeiVn46iK-n-oKbiUReQEw5VebDgTAfacJojRaT3PII3PM3OkJpTZ70UK--H0IX6CoDkvzFHz3HZ5RD_Xnq0Z2ct9fWRjkDNYGfBm6myJFOvlZkt99IEYL9hsYWPoA_9lPiJW79SFxh5RZya7SmZ-liw-pEN-NSxBmrYd5AwWKz3opMkcw2Hn72LB7WTPLoAzze6oAOFeussS2j9mn8dJyAhAUi_d0ta8ajdTrZalC2A-_VqzjOs9AAqEcjMHyQsYERkWpbXqrhJRnQNlzyR-PLRuGBWHcmGLubWOQ8f0f9uxPaPXQr8y0bXfhDzsqfEyq_Xbw1IXLJOrzZz7ac7pmGh8gtxBXdGYTPx0EZb9PyxO-Lya1_5Cu5CauYtxPC0rlCmTtB4E_EbnWaRasBbL_PEN6jgpDnrxPgEkJYJk_MMdh4ruflCWXGPT5nXM7i6Sz9rHC4b25usEy-8-DaoOP--lWc2-nsfVtdX7flvKMWUNiBdYehR9M0FUFcTgMRK6oie-x3708x1kuw8cWpzyLOFW9Bp788WRH0t2YsbTT-rBwTaYg8ZiL78joOJUD-xfkJgFtyN9E_uOWbNz0fumW7qaHjNVyUbMVA-jZrAMeFdlsu3_ouKw4NC70aM0rjE1QS1zV7kledImgIsLavd9H7zRq9jHiMsrRahCsvLcTQaVe2X3zoKps_5zXwbILI6Rz4AseA4ij-wmdvl3ib0enGhO1PoeegLb0ItdRZtiqlM8gJvbleEiU2lIci5FdlJgA239Fsi75Z7RYzbtHKaS-wEsgvRSC0","CREFURL":"https%3a%2f%2fwww.flaticon.com%2ffree-icon%2fnetflix_5968579%3frelated_id%3d5968579","BN":60696828,"READ_CONSENT":false};
+if(!Adform.ADFBannerParams)Adform.ADFBannerParams=[];
+Adform.ADFBannerParams.push(Adform.ADFBannerData);
+typeof Adform.ADFUtilInstance=="undefined"?document.write('<scr'+'ipt type="text/javascript" src="https://s1.adform.net/mink/634/s1.adform.net/bootstrap.js"></scr'+'ipt>'):new Adform.ADFBanner();
