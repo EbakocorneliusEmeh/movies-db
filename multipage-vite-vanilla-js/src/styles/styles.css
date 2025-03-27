@@ -224,7 +224,7 @@ footer {
 }
 
 #page {
-  background-color: #122126ef;
+  background-color: #122127ef;
 }
 
 .logos {
@@ -337,32 +337,32 @@ footer {
   height: 100%;
 }
 
-#aaa img {
+.mok img {
   width: 80%;
   height: 100%;
 }
 
-#aaa img {
+.mke img {
   width: 80%;
   height: 100%;
 }
 
-#aaa img {
+.muuk img {
   width: 80%;
   height: 100%;
 }
 
-#aaa img {
+.moke img {
   width: 80%;
   height: 100%;
 }
 
-#aaa img {
+.muok img {
   width: 80%;
   height: 100%;
 }
 
-#aaa {
+.zump {
   display: flex;
   margin-top: 4rem;
 }
@@ -375,6 +375,7 @@ footer {
   background-color: #3e3b3b;
   width: 80px;
   padding-top: 5px;
+  align-items: baseline;
   justify-content: center;
   align-items: center;
   margin-left: 2rem;
