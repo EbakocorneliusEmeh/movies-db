@@ -69,7 +69,7 @@ body {
 #btn3 {
   gap: 3rem;
   margin-top: 4rem;
-  background-color: #000000;
+  background-color: #000;
   color: #fff;
   border-radius: 10px;
   font-size: 20px;
@@ -186,7 +186,7 @@ ul li a {
 }
 
 #aaa {
-  background-color: #000000;
+  background-color: #000;
   display: grid;
   grid-template-columns: repeat(4, 5fr);
   padding: 5px;
@@ -224,7 +224,7 @@ footer {
 }
 
 #page {
-  background-color: rgba(18, 33, 39, 0.938);
+  background-color: #122126ef;
 }
 
 .logos {
@@ -337,32 +337,32 @@ footer {
   height: 100%;
 }
 
-.mok img {
+#aaa img {
   width: 80%;
   height: 100%;
 }
 
-.mke img {
+#aaa img {
   width: 80%;
   height: 100%;
 }
 
-.muuk img {
+#aaa img {
   width: 80%;
   height: 100%;
 }
 
-.moke img {
+#aaa img {
   width: 80%;
   height: 100%;
 }
 
-.muok img {
+#aaa img {
   width: 80%;
   height: 100%;
 }
 
-.zump {
+#aaa {
   display: flex;
   margin-top: 4rem;
 }
@@ -372,10 +372,9 @@ footer {
   font-size: 4rem;
   display: flex;
   border-radius: 50px;
-  background-color: rgb(62, 59, 59);
+  background-color: #3e3b3b;
   width: 80px;
   padding-top: 5px;
-  align-items: baseline;
   justify-content: center;
   align-items: center;
   margin-left: 2rem;
@@ -386,7 +385,7 @@ footer {
   font-size: 4rem;
   display: flex;
   border-radius: 50px;
-  background-color: rgb(62, 59, 59);
+  background-color: #3e3b3b;
   width: 80px;
   padding-top: 5px;
   align-items: baseline;
