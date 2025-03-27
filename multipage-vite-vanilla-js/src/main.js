@@ -20,8 +20,7 @@ div.innerHTML = `
             <li><a href="/detail.html">Forum</a></li>
             <li><a href="/detail.html">About</a></li>
           </ul>
-            
-          </nav>
+          </nav>s
         </div>
         <div class="sone">
          <img class="search" src="/images/search-imgool.png" alt="">
@@ -84,41 +83,38 @@ div.innerHTML = `
       <div class="muk">
       <img src="/images/imagehero.png" alt="">
    </div>
-     <div class="mok"><img src="/images/imagedram.png" alt=""></div>
-     <div class="mke"><img src="/images/imagesit.png" alt=""></div>
-     <div class="muuk"><img src="/images/imahetra.png" alt=""></div>
-     <div class="moke"><img src="/images/imagecome.png" alt=""></div>
-    <div class="muok"><img src="/images/imagefan.png" alt=""></div>
+        <div class="mok"><img src="/images/imagedram.png" alt=""></div>
+       <div class="mke"><img src="/images/imagesit.png" alt=""></div>
+       <div class="muuk"><img src="/images/imahetra.png" alt=""></div>
+       <div class="moke"><img src="/images/imagecome.png" alt=""></div>
+       <div class="muok"><img src="/images/imagefan.png" alt=""></div>
     </div>
+    <hr></hr>
+            <footer>
+          <div class="parata">
+           <h1>Our plantform is trusted <br> by millions $ features <br> brst update movies <br> all around the world.</h1>
+           <div class="ben">
+            <p>privacy</p>
+           <p>Team of service</p>
+           <p>Language</p>
+           </div>
+           </div>
+           <div class="parat">
+            <div class="pppe">
+              <p>Home </p> 
+              <p>Discover /</p>
+              <p>Influence /</p>
+              <p>Release /</p>
+              </div>
+           <div class="logos">
+            <img width="50" height="50" src="https://img.icons8.com/ios/50/1A1A1A/instagram-new--v1.png" alt="instagram-new--v1" class="amba"/>
+            <img width="50" height="50" src="https://img.icons8.com/ios/50/1A1A1A/facebook-new.png" alt="facebook-new" class="amba"/>
+           <img width="50" height="50" src="https://img.icons8.com/ios/50/1A1A1A/twitterx--v2.png" alt="twitterx--v2" class="amba"/>
+           <img width="50" height="50" src="https://img.icons8.com/ios-glyphs/30/1A1A1A/google-logo--v1.png" alt="google-logo--v1" class="amba"/>
+           </div>
 
-      <footer>
-    <div class="jude">
-      <div class="penn">
-        <div class="pppe">
-           <p>Home </p> 
-           <p>Discover /</p>
-           <p>Influence /</p>
-           <p>Release /</p>
-        </div>
-       <div class="logos">
-          <img width="50" height="50" src="https://img.icons8.com/ios/50/1A1A1A/instagram-new--v1.png" alt="instagram-new--v1" class="amba"/>
-          <img width="50" height="50" src="https://img.icons8.com/ios/50/1A1A1A/facebook-new.png" alt="facebook-new" class="amba"/>
-          <img width="50" height="50" src="https://img.icons8.com/ios/50/1A1A1A/twitterx--v2.png" alt="twitterx--v2" class="amba"/>
-         <img width="50" height="50" src="https://img.icons8.com/ios-glyphs/30/1A1A1A/google-logo--v1.png" alt="google-logo--v1" class="amba"/>
-       </div>
-       </div>
-  
-    <div class="parata">
-      <h1>Our plantform is trusted <br> by millions $ features <br> brst update movies <br> all around the world.</h1>
-  
-      <div class="ben">
-      <p>privacy</p>
-      <p>Team of service</p>
-      <p>Language</p>
-      </div>
-    </div>
-    </div>
-    </footer> 
+           </div>
+        </footer> 
 
 `;
 

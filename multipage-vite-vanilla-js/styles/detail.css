@@ -20,6 +20,7 @@ header {
     width: 32px;
     height: 32px;
   }
+  
   .notifications {
     width: 32px;
     height: 32px;
@@ -59,33 +60,11 @@ header {
   }
   
   ul li a {
-    color: #fff;
+    color: #413a3a;
     font-size: 2rem;
     font-weight: bold;
   }
-
-  footer {
-    background-color: aqua;
-    margin-top: 4rem;
-  }
-  .jude {
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-  }
-  .penn {
-    gap: 3rem;
-    font-size: 2rem;
-  }
-  .ben {
-    font-size: 1rem;
-    display: flex;
-    gap: 3rem;
-    margin-top: 7rem;
-  }
-  .logos {
-    margin-top: 15rem;
-  }
+  
   #top-rated {
    background-color: white;
     display: grid;
@@ -99,9 +78,3 @@ header {
     margin: 10px;
     display: flex;
   }
-  /* .img-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  } */
